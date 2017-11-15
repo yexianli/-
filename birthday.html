@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>小凤生日快乐</title>
+    <meta name="name" content="content">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <style>
+        body {
+            background: royalblue;
+            color: #fff;
+            overflow: hidden;
+            font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;
+        }
+
+        .snow {
+            position: absolute;
+        }
+
+        .first, .second, .third, .four, .five {
+
+            display: none;
+        }
+
+        .wrap {
+
+            font-size: 29px;
+        }
+
+        .left {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .left ul {
+            border-radius: 5px;
+            font-size: 0;
+            width: 100px;
+            border: 1px solid white;
+            height: 20px;
+            overflow: hidden;
+        }
+
+        .left ul li {
+            display: inline-block;
+            font-size: 14px;
+            width: 100px;
+        }
+
+
+    .cake{
+        position: absolute;
+        width: 300px;
+        height: 280px;
+
+        left: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        background-color:royalblue;
+    }
+        ul {
+            list-style-type: none;
+        }
+        .cake ul li{
+            background: url("img/1.jpg") no-repeat;
+            background-size: 100%;
+            height: 600px;
+            transition: all 0.8s
+        }
+        .cake img,.cake ul,.cake ul li{
+            width: 247px;
+            height: 280px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="first">祝你生日快乐</div>
+    <div class="second">希望你能开开心心的考上博士</div>
+    <div class="third">相信你一定能考上博士</div>
+    <div class="four">加油!你是最棒的</div>
+    <div class="five ">经常联系喔</div>
+</div>
+<div class="cake">
+    <ul>
+        <li></li>
+    </ul>
+
+</div>
+<div id="left" class="left">
+    <ul>
+        <li id="liFirst">生日快乐</li>
+        <li>天天开心</li>
+        <li>越来越好</li>
+    </ul>
+</div>
+<video autoplay="autoplay" loop="loop" style="display: none">
+      
+    <source src="music/1.mp3"  />
+</video>
+
+<script src="js/zepto.js"></script>
+<script src="js/event.js"></script>
+<script src="js/f.js"></script>
+<script src="js/fx.js"></script>
+
+
+<!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://zeptojs.com/let-it-snow" data-text="Let it snow with Zepto.js" data-via="zeptojs" data-lang="en">Tweet</a>-->
+<!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs")</script>-->
+
+<script>
+	$(document).ready(function () {
+		var n = 0,d = 0,a,imgArr = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg'];
+		li = $('.cake li')
+		setInterval(move, 1000)
+		function fu() {
+			li.css("background-image", "url(" + imgArr[d] + ")")
+
+			d++
+			if (d == imgArr.length) {
+				d = 0
+			}
+			console.log(d)
+		}
+			setInterval(fu, 2000)
+		function move() {
+
+			a = -n * 100 + 'px'
+
+			$("#liFirst").animate({'margin-left': a})
+
+			n++
+//    return n
+			if (n == 3) {
+				n = 0
+				$("#liFirst").animate({'margin-left': a})
+			}
+		}
+
+		setTimeout(function () {
+			$('.first').fadeIn(1000)
+		}, 1000)
+		setTimeout(function () {
+			$('.second').fadeIn(1000)
+		}, 3000)
+		setTimeout(function () {
+			$('.third').fadeIn(1000)
+		}, 5000)
+		setTimeout(function () {
+			$('.four').fadeIn(1000)
+		}, 7000)
+		setTimeout(function () {
+			$('.five').fadeIn(1000)
+		}, 8000)
+
+		var i = 100, glyphs = '❄❅❆'.split('')
+
+		function rand(max) {
+			return Math.floor(Math.random() * max)
+		}
+
+		function addFlake() {
+			var el = $('<div class="snow"><div class="snow">' + glyphs[rand(glyphs.length)] + '</div></div>')
+			$('body').append(el)
+			el.css({left: rand(100) + '%', top: -100 - rand(500), fontSize: 20 + rand(30)})
+			el.anim(
+				{
+					translateY: 1500 + rand(500) + 'px',
+					translateX: 50 - rand(100) + 'px',
+					rotate: (2e3 - rand(4e3)) + 'deg'
+				},
+				6 + rand(10),
+				'linear',
+				function () {
+					addFlake()
+					el.remove() // garbage collect
+				}
+			)
+		}
+
+		while (i--) addFlake()
+		// enable for extra fun
+		//window.ondeviceorientation = function(event){
+		//  ('alpha' in event) && $('body').css({ '-webkit-transform': 'rotate('+event.alpha+'deg)'})
+		//}
+	})
+</script>
+</body>
+</html>

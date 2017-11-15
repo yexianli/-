@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 40px;
+}
+/*清除默认样式*/
+button,input,a,textarea{
+    outline:none;
+}
+a,a:hover{ text-decoration:none; color:#333}
+li{list-style:none;}
+/*
+头部开始
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 40px;
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+    background-color:#c07f3e;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+/*公共样式约定*/
+/*.marRL_10{margin-left:0.25rem;margin-right:0.25rem;}*/
+.marT_10{margin-top:0.25rem;}
+.marT_100{margin-top:2.5rem;}
+.marT_80{margin-top:2rem;}
+/*.marT_15{margin-top:0.375rem;}*/
+/*.marT_9{margin-top:0.225rem;}*/
+.marT_20{margin-top:0.5rem;}
+.marT_60{margin-top:1.5rem;}
+.marT_50{margin-top:1.25rem;}
+.marT_120{margin-top:3rem;}
+.width_300{width:7.5rem;!important;}
+.width_190{width:4.75rem;!important;}
+/*.marT_40{margin-top:1rem;}*/
+/*.height_130{height:3.25rem;}*/
+/*.marRL_20{margin-left:0.5rem;margin-right:0.5rem;}*/
+/*.marRL_30{margin-left:0.75rem;margin-right:0.75rem;}*/
+.full_width{width:100%;}
+.fleft{float:left;!important;}
+.fright{float:right;!important;}
+input{
+    width:100%;
+    height:2.2rem;
+    border-radius:1.1rem;
+    -webkit-border-radius:1.1rem;
+    -moz-border-radius:1.1rem;
+    color:#999999;
+    font-size:0.7rem;
+    text-indent:1.8rem;
+    background-color:#fff;
+}
+button{
+    width:100%;
+    height:2.2rem;
+    border-radius:1.1rem;
+    -webkit-border-radius:1.1rem;
+    -moz-border-radius:1.1rem;
+    color:#999999;
+    font-size:0.7rem;
+    background-color:#fff;
+}
+div.back{
+    width:100%;
+    height:2.2rem;
+}
+a.back{
+    float:left;
+    width:4rem;
+    height:2.2rem;
+}
+a.back img{
+    float:left;
+    height:1rem;
+    margin-left:0.25rem;
+    margin-top:0.6rem;
+}
+a.back span{
+    float:left;
+    height:2.2rem;
+    line-height:2.2rem;
+    margin-left:0.25rem;
+    font-size:0.7rem;
+    color:#fff;
+}
+a.back_right{
+    float:right;
+    width:4rem;
+    height:2.2rem;
+}
+a.back_right img{
+    float:right;
+    height:1rem;
+    margin-right:0.25rem;
+    margin-top:0.6rem;
+}
+a.back_right span{
+    float:right;
+    height:2.2rem;
+    line-height:2.2rem;
+    margin-right:0.25rem;
+    font-size:0.7rem;
+    color:#fff;
+}
+a.goRegester{
+    display:inline-block;
+    text-align:center;
+    line-height:2.2rem;
+    width:100%;
+    height:2.2rem;
+    border-radius:1.1rem;
+    -webkit-border-radius:1.1rem;
+    -moz-border-radius:1.1rem;
+    color:#999999;
+    font-size:0.7rem;
+    background-color:#fff;
+}
+/*中间部分*/
+.container{
+    margin:3.25rem 1.75rem 0 1.75rem;
+    position:relative;
+}
+.binding{
+    width:100%;
+    height:0.7rem;
+    line-height:0.7rem;
+    font-size:0.7rem;
+    color:#fff;
+    position:absolute;
+    top:-2.2rem;
+    left:0;
+}
+.logo{
+    width:100%;
+    height:2.2rem;
+    position:relative;
+}
+.logo img{
+    height:2.2rem;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.username{
+    background:url("../img/login_name@3x.png") #fff no-repeat 0.55rem 0.55rem;
+    background-size:1rem;
+    -webkit-background-size:1rem;
+    -moz-background-size:1rem;
+}
+.passward{
+    background:url("../img/login_mima@3x.png") #fff no-repeat 0.55rem 0.55rem;
+    background-size:1rem;
+    -webkit-background-size:1rem;
+    -moz-background-size:1rem;
+}
+/*动态登录*/
+.dynamicLogin{
+    float:right;
+    margin-top:0.5rem;
+    text-decoration:underline;
+    color:#fff;
+    font-size:0.7rem;
+}
+.forgetPWD{
+    float:left;
+    margin-top:0.5rem;
+    text-decoration:underline;
+    color:#fff;
+    font-size:0.45rem;
+}
+.register{
+    float:right;
+    margin-top:0.25rem;
+    text-decoration:underline;
+    color:#fff;
+    font-size:0.7rem;
+}
+/*其他方式登录*/
+.wayTitle{
+    width:100%;
+    height:0.4rem;
+    line-height:0.45rem;
+    text-align:center;
+    color:#fff;
+    font-size:0.45rem;
+}
+.wayContent{
+    width:100%;
+    height:3.05rem;
+    position:relative;
+    margin-top:0.75rem;
+}
+.wayContent a.weixin{
+    float:left;
+    width:3.05rem;
+    height:3.05rem;
+}
+.wayContent a.weibo{
+    width:3.05rem;
+    height:3.05rem;
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.wayContent a.qq{
+    float:right;
+    width:3.05rem;
+    height:3.05rem;
+}
+.wayContent a img{
+    width:100%;
+}
+.had{
+    width:100%;
+    height:0.7rem;
+    line-height:0.7rem;
+    color:#fff;
+    font-size:0.7rem;
+}
+.havent{
+    width:100%;
+    height:0.7rem;
+    line-height:0.7rem;
+    color:#fff;
+    font-size:0.7rem;
+}
+/*软件协议*/
+.protocol{
+    width:100%;
+    height:0.6rem;
+    line-height:0.6rem;
+    text-align:center;
+    font-size:0.45rem;
+    color:#fff;
+}
+.protocol span{
+    display:inline-block;
+    width:0.3rem;
+    height:0.3rem;
+    margin-right:0.1rem;
+    border:1px solid #06703F;
+}
+.protocol a{
+    font-size:0.45rem;
+    color:#fff;
+    text-decoration:underline;
+}
+.shadow{
+    width:14.25rem;
+    height:2.2rem;
+    line-height:2.2rem;
+    text-align:center;
+    color:#fff;
+    font-size:0.7rem;
+    background-color:rgba(0,0,0,0.8);
+    position:absolute;
+    bottom:3.4rem;
+    left:0.875rem;
+    border-radius:1.1rem;
+    -webkit-border-radius:1.1rem;
+    -moz-border-radius:1.1rem;
+}

@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 40px;
+}
+/*清除默认样式*/
+button,input,a,textarea{
+    outline:none;
+}
+a,a:hover{ text-decoration:none; color:#333}
+li{list-style:none;}
+/*
+头部开始
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 40px;
+}
+/*
+头部开始
+*/
+body{
+    background-color:#f0f0f0;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+/*公共样式约定*/
+.marRL_10{margin-left:0.25rem;margin-right:0.25rem;}
+.marT_10{margin-top:0.25rem;}
+.marT_15{margin-top:0.375rem;}
+.marT_9{margin-top:0.225rem;}
+.marT_20{margin-top:0.5rem;}
+.marT_40{margin-top:1rem;}
+.height_130{height:3.25rem;}
+.marRL_20{margin-left:0.5rem;margin-right:0.5rem;}
+.marRL_30{margin-left:0.75rem;margin-right:0.75rem;}
+.full_width{width:100%;}
+.fleft{float:left;}
+.fright{float:right !important;  }
+/*头部开始*/
+.header{
+    position: fixed;
+    width: 100%;
+    height: 2.2rem;
+    background: #bd8d5a;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header>a.back{
+    float:left;
+    width:3rem;
+    height:2.2rem;
+}
+.header>a.back img{
+    height:1rem;
+    float:left;
+    margin-top:0.6rem;
+    margin-left:0.25rem;
+}
+.header>a.back span{
+    float:left;
+    margin-top:0.6rem;
+    margin-left:0.25rem;
+    height:1rem;
+    text-align:center;
+    line-height:1rem;
+    color:#fff;
+    font-size:0.7rem;
+}
+/*中间包裹部分*/
+.container{
+    width: 100%;
+    position: relative;/*此时要设置position*/
+    height: 100%;
+    max-height: 100%;
+    padding: 2.2rem 0 2.45rem 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+/*底部样式*/
+.footer{
+    position: fixed;
+    width: 100%;
+    height: 2.45rem;
+    bottom: 0;
+    left: 0;
+    background: white;
+    border-top: 1px solid #dcdcdc;
+}
+.footer ul{
+    margin: 0;
+}
+.footer ul li{
+    float: left;
+    list-style: none;
+    background: white;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+}
+.footer ul li img{
+    width: 1.35rem;
+    display: block;
+    margin-left: 1.3rem;
+}
+.footer ul li:nth-child(3) span{
+    display: block;
+    color: #70ba2d;
+}
+.orangebtn{
+    width:5.4rem;
+    height:1.45rem;
+    color:#fff;
+    font-size:0.7rem;
+    background-color:#FE9B01;
+    border-radius:0.3rem;
+    -webkit-border-radius:0.3rem;
+    -moz-border-radius:0.3rem;
+}
+.footer ul li span{
+    display: block;
+    font-size: 0.7rem;
+    color: #999999;
+}
+/*头部搜索*/
+.header>.title{
+    width:7rem;
+    height:1rem;
+    line-height:1rem;
+    font-size:0.95rem;
+    color:#fff;
+    text-align:center;
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.header .headInput{
+    width:10rem;
+    height:1.2rem;
+    color:#656565;
+    text-indent:0.5rem;
+    font-size:0.7rem;
+    border-radius:0.6rem;
+    -webkit-border-radius:0.6rem;
+    -moz-border-radius:0.6rem;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    margin:auto;
+}
+.header>.search{
+    float:right;
+    margin-right:0.5rem;
+    height:2rem;
+    margin-top:0.2rem;
+    width:1.5rem;
+}
+.header>.search>div{
+    float:right;
+    height:1rem;
+    text-align:center;
+    line-height:1rem;
+    width:100%;
+    font-size:0.6rem;
+    color:#fff;
+}
+.header .searchbg{
+    background:url("../img/nav_search@3x.png") center no-repeat;
+    background-size:1rem;
+    -webkit-background-size:1rem;
+    -moz-background-size:1rem;
+}
+/*发现主页导航*/
+.no-activity{
+    width:6rem;;
+    height:3rem;
+    background:url("../img/image_kaifazhong.png") no-repeat center;
+    background-size:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.findGuide{
+    height:3.5rem;
+    width:100%;
+    border-bottom:1px solid #dcdcdc;
+    background-color:#fff;
+    position:relative;
+}
+.findGuide a{
+    display:inline-block;
+    width:2rem;
+    height:100%;
+}
+.findGuide a img{
+    float:left;
+    margin-top:0.5rem;
+    width:2rem;
+    height:2rem;
+}
+.findGuide a span{
+    width:100%;
+    height:0.5rem;
+    float:left;
+    margin-top:0.25rem;
+    text-align:center;
+   font-size:0.45rem;
+    color:#333;
+}
+a.ShoppingMall{
+    float:right;
+    margin-right:2.5rem;
+}
+a.activity{
+    float:left;
+    margin-left:2.5rem;
+}
+a.preview{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+/*轮播*/
+.hot{
+    margin-top:0.25rem;
+}
+.Carousel{
+    width:100%;
+    height:8.85rem;
+    background-color:#fff;
+}
+.hotfont{
+    width:100%;
+    height:0.95rem;
+    line-height:0.95rem;
+    color:#333;
+    text-align:center;
+    font-size:0.45rem;
+    border:1px solid #dcdcdc;
+    background-color:#fff;
+}
+/*活动*/
+.activity{
+    height:10.9rem;
+    width:100%;
+    margin-bottom:0.25rem;
+    border-top:1px solid #dcdcdc;
+    border-bottom:1px solid #dcdcdc;
+}
+.activity img{
+    float:left;
+    width:100%;
+    height:8.8rem;
+}
+.actDetail{
+    float:left;
+    width:100%;
+    height:2.1rem;
+    background-color:#fff;
+}
+.actDetailbg{
+    margin:0.325rem 0.5rem;
+}
+.actTitle{
+    font-size:0.7rem;
+    color:#333;
+}
+.actTimebg{
+    font-size:0.45rem;
+    color:#656565;
+}
+/*预览*/
+.reading{
+    margin-bottom:0.25rem;
+    border-top:1px solid #dcdcdc;
+    border-bottom:1px solid #dcdcdc;
+}
+.readTitle{
+    width:100%;
+    height:1.2rem;
+    background-color:#fff;
+}
+.readTitle .titleName{
+    height:1.2rem;
+    line-height:1.2rem;
+    color:#333;
+    font-size:0.7rem;
+    float:left;
+    margin-left:0.5rem;
+}
+.readTitle .titleTime{
+    height:1.2rem;
+    line-height:1.2rem;
+    color:#656565;
+    font-size:0.45rem;
+    float:right;
+    margin-right:0.5rem;
+}
+.reading img{
+    display:block;
+    width:100%;
+    height:8.8rem;
+}
+.readBottom{
+    width:100%;
+    height:1.7rem;
+    background-color:#fff;
+}
+.readBottom .like{
+    float:left;
+    margin-left:0.5rem;
+    width:3.25rem;
+    height:1.7rem;
+    line-height:1.7rem;
+    text-indent:0.8rem;
+    font-size:0.7rem;
+    color:#656565;
+    background:url("../img/act_dianzan@3x.png") no-repeat 0 0.5rem;
+    background-size:0.7rem 0.7rem;
+    -webkit-background-size:0.7rem 0.7rem;
+    -moz-background-size:0.7rem 0.7rem;
+}
+.book{
+    float:left;
+    width:3.25rem;
+    height:1.7rem;
+    line-height:1.7rem;
+    text-indent:0.8rem;
+    font-size:0.7rem;
+    color:#656565;
+    background:url("../img/btn_yueduliang_1.png") no-repeat 0 0.5rem;
+    background-size:0.7rem 0.7rem;
+    -webkit-background-size:0.7rem 0.7rem;
+    -moz-background-size:0.7rem 0.7rem;
+}
+a.enterDetail{
+    float:right;
+    height:1.7rem;
+    width:5rem;
+    margin-right:0.5rem;
+}
+a.enterDetail img{
+    height:1rem;
+    width:0.62rem;
+    float:right;
+    margin-top:0.35rem;
+}
+a.enterDetail span{
+    height:1rem;
+    line-height:1rem;
+    font-size:0.7rem;
+    color:#656565;
+    margin-right:0.25rem;
+    float:right;
+    margin-top:0.35rem;
+}
